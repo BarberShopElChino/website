@@ -1,141 +1,344 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Barber Shop El Chino</title>
-    <link rel="icon" type="images/png" href="images/favi/Icon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-    <noscript>El navegador no soporta JavaScript.
-    </noscript>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barber Shop El Chino — Barbería &amp; Estilismo en La Libertad</title>
+<meta name="description" content="Barbería y salón de belleza en La Libertad, Santa Elena. Cortes urbanos, barbería clásica, color y tratamientos para hombres y mujeres.">
+<link rel="icon" type="image/png" href="images/favi/Icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=19">
 </head>
 <body>
-    <header class="primary-header container group">
-        <a href="index.html"><img class="f_logo" sizes="(min-width: 1200px) 120px, (min-width: 640px) 18vw, 35vw" 
-        srcset="images/logo/B1_800.png 800w, images/logo/B1_400.png 400w, images/logo/B1_350.png 350w, " 
-        src="images/logo/B1_350.png" alt="Logo Chino xd"></a>
-        <h1 class="logo">
-        <a href="index.html">Barber Shop <br> El Chino</a>
-        </h1>
-        <nav class="nav primary-nav">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
 
-                <li><a href="galeria.html">Galeria</a>
-                <ul class="submenu1">
-                   <li><a href="galeria.html#GaleriaHombre">Hombre</a></li>
-                   <li><a href="galeria.html#GaleriaMujer">Mujer</a></li>
-                 </ul>
-               </li>
+<!-- ============ Header ============ -->
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <!-- Logo actual: al reemplazar por el nuevo, sobrescribe estos 3 archivos
+           (mismos nombres, misma proporción) y no hace falta tocar el HTML. -->
+      <img class="brand__logo"
+           sizes="(min-width: 1200px) 120px, (min-width: 640px) 18vw, 30vw"
+           srcset="images/logo/B1_800.png 800w, images/logo/B1_400.png 400w, images/logo/B1_350.png 350w"
+           src="images/logo/B1_350.png" alt="Barber Shop El Chino">
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-site-nav>
+      <ul class="site-nav__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-                <li><a href="servicios.html">Servicios</a>
-                  <ul class="submenu1">
-                     <li><a href="servicios.html#ServicioHombre">Hombre</a></li>
-                     <li><a href="servicios.html#ServicioMujer">Mujer</a></li>
-                   </ul>
-                </li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contactanos.html">Contactanos</a></li>
-                <li><a href="registro.html">Registrarse</a>
-                  <ul class="submenu1">
-                   <li><a href="registro.html">Registrate</a></li>
-                  </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="slider">
-          <ul>
-            <li><img src="images/dollar.jpg" alt="Holi"></li>
-            <li><img src="images/slider2.png" alt="Holi"></li>
-            <li><img src="images/slider3.png" alt="Holi"></li>
-            <li><img src="images/slider4.png" alt="Holi"></li>
-          </ul>     
+<main>
+
+  <!-- ============ Hero ============ -->
+  <section class="scene scene--hero" id="hero" data-hero-scrub>
+    <div class="scene__media" data-bg-video>
+      <video muted loop playsinline autoplay preload="auto" poster="images/galeria/hombre/videos/hombre.png">
+        <source src="images/galeria/hombre/videos/v1.mp4" type="video/mp4">
+      </video>
+      <div class="scene__scrim"></div>
+    </div>
+    <div class="scene__content">
+      <img class="hero__logo" src="images/logo/B1_800.png" alt="" aria-hidden="true">
+      <h1 class="hero__title" data-split-reveal>Estilo urbano. Precisión de barbero.</h1>
+      <p class="hero__lead" data-reveal>Barbería y salón de belleza en La Libertad, Santa Elena. Cortes, diseños, color y tratamientos — para caballeros y damas que no se conforman con lo genérico.</p>
+      <a class="btn btn--accent" data-reveal href="https://api.whatsapp.com/send?phone=593968606488&text=Hola%20Barber%20Shop%20El%20Chino%2C%20quiero%20reservar%20una%20cita" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    </div>
+    <div class="scroll-cue"><span></span>Desliza</div>
+  </section>
+
+  <!-- ============ Declaración de marca ============ -->
+  <section class="scene scene--auto scene--dark" id="esencia">
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Nuestra esencia</span>
+      <p class="statement" data-split-reveal data-pin-reveal>Cada corte es una declaración. <em>Técnica de barbero</em>, actitud urbana y el detalle de un salón que trata cada cabeza como la primera del día.</p>
+    </div>
+  </section>
+
+  <!-- ============ Servicios & Galería (fusionado: ya no son páginas
+       separadas — todo vive dentro de Inicio) ============ -->
+  <section class="scene scene--auto scene--alt" id="servicios">
+    <div class="scene__content scene__content--wide">
+      <span class="eyebrow" data-reveal>Servicios</span>
+      <h2 data-reveal>Cortes, barbería &amp; belleza</h2>
+      <p data-reveal>Para hombre y mujer — con la galería de cada categoría a un scroll de distancia, sin salir de esta página.</p>
+    </div>
+  </section>
+
+  <section class="scene scene--auto scene--dark scene--overflow-visible" id="servicios-hombre">
+    <div class="scene__content scene__content--wide scene__content--left">
+      <span class="eyebrow" data-reveal>Para hombre</span>
+      <h3 data-reveal>Barbería &amp; cortes urbanos</h3>
+    </div>
+    <div class="services-split">
+      <div class="services-split__cards">
+        <div class="category-grid" data-reveal-group>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/inicio/galeria.png" alt="">
+                <h4>Barbería</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Barbería</span>
+                <p>Cortes clásicos, degradados y arreglo de barba con navaja.</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/inicio/servicios.png" alt="">
+                <h4>Cortes clásicos &amp; urbanos</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Cortes urbanos</span>
+                <p>Fades, diseños y estilos urbanos hechos a tu medida.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-</body>
-
-<section class="hero container">
-    <h2>Bienvenidos a BarberShop El Chino</h2>
-    <h2>Dedicados al Estilo, Moda y Tendencia</h2>
-    <p>Los mejores diseños de Barbería, Cortes Urbanos y Belleza con excelencia, para relucir en tus eventos.</p>
-    <a class="btn btn-alt" href="registro.html">Registrarse Ahora</a>
-</section>
-
-<section class="row">
-      <div class="grid">
-
-        <!-- Galería -->
-
-        <section class="teaser col-1-3">
-          <a href="galeria.html">
-            <h5>Galeria</h5>
-            <h3>Caballeros & Ladys</h3>
-          </a>
-          <p>Elije los mejores estilos en tendencia, tendencia urbana para caballeros y looks para damas.</p>
-          <a href="galeria.html"><img class="inicioIcon" src="images/inicio/galeria.png" alt="Galeria"></a>
-        </section><!--
-
-        Servicios
-
-        --><section class="teaser col-1-3">
-          <a href="servicios.html">
-            <h5>Servicios</h5>
-            <h3>Cortes, Barbería & Belleza</h3>
-          </a>
-          <p>Cortes para damas y caballeros, barbería para los galanes y manicure & pedicure para exhaltar la finura de la mujer.</p>
-          <a href="servicios.html"><img class="inicioIcon" src="images/inicio/servicios.png" alt="Servicios"></a>
-        </section><!--
-
-        Nosotros
-
-        --><section class="teaser col-1-3">
-          <a href="nosotros.html">
-            <h5>Nosotros</h5>
-            <h3>Acerca de nosotros</h3>
-          </a>
-          <p>Somos un grupo que se encarga de que tu estilo, tu aspecto tiene que relucir como te quieres ver.</p>
-          <a href="nosotros.html"><img class="inicioIcon" src="images/inicio/nosotros.png" alt="Nosotros"></a>
-        </section><!--
-
-        Contactanos
-
-        --><section class="teaser col-1-3">
-          <a href="contactanos.html">
-            <h5>Contactanos</h5>
-            <h3>Comunicate con nosotros</h3>
-          </a>
-          <a href="contactanos.html"><img class="inicioIcon" src="images/inicio/contactanos.png"></a>
-        </section><!--
-
-        Registrate
-
-        --><section class="teaser col-1-3">
-          <a href="registro.html">
-            <h5>Registrarse</h5>
-            <h3>Obtén descuentos y privilegios</h3>
-          </a>
-          <a href="registro.html"><img class="inicioIcon" src="images/inicio/registrarse.png"></a>
-          
-        </section>
-
+        <p class="category-credit" data-reveal>A cargo de <a href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">Kleber Tomala</a> — Barbero / Estilista</p>
       </div>
-</section>
+      <div class="inline-gallery" id="galeria-hombre">
+        <h4 class="inline-gallery__title">Galería — Hombre</h4>
+        <div class="mini-gallery" data-reveal-group>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c1.jpg" alt="Corte de hombre #1"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c2.jpg" alt="Corte de hombre #2"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c3.jpg" alt="Corte de hombre #3"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c4.jpg" alt="Corte de hombre #4"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c5.jpeg" alt="Corte de hombre #5"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c6_estrella_espiral.jpg" alt="Diseño de navaja: estrella y espiral"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c7.jpg" alt="Corte de hombre #7"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c8.jpeg" alt="Corte de hombre #8"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c9.jpeg" alt="Corte de hombre #9"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c10.jpg" alt="Corte de hombre #10"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c11.jpg" alt="Corte de hombre #11"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c12.jpg" alt="Corte de hombre #12"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c13.jpg" alt="Corte de hombre #13"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c14.jpg" alt="Corte de hombre #14"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c15.jpg" alt="Corte de hombre #15"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c16.jpeg" alt="Corte de hombre #16"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c17.jpg" alt="Corte de hombre #17"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c18_fade_clasico.jpg" alt="Fade clásico"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c19.jpg" alt="Corte de hombre #19"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/hombre/cortes/c20.jpg" alt="Corte de hombre #20"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="primary-footer container group">
+  <section class="scene scene--auto scene--alt scene--overflow-visible" id="servicios-mujer">
+    <div class="scene__content scene__content--wide scene__content--left">
+      <span class="eyebrow" data-reveal>Para mujer</span>
+      <h3 data-reveal>Color, cortes &amp; belleza</h3>
+    </div>
+    <div class="services-split">
+      <div class="services-split__cards">
+        <div class="category-grid" data-reveal-group>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/servicios/t1.png" alt="">
+                <h4>Tratamientos capilares</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Capilares</span>
+                <p>Hidratación y reconstrucción para un cabello sano.</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/servicios/t2.png" alt="">
+                <h4>Cortes bob, grafilado &amp; más</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Cortes</span>
+                <p>Estilos femeninos a la medida de tu rostro.</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/servicios/t3.png" alt="">
+                <h4>Manicure &amp; pedicure</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Manos &amp; pies</span>
+                <p>Cuidado completo de manos y pies.</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/servicios/t4.png" alt="">
+                <h4>Limpieza facial &amp; maquillaje</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Facial</span>
+                <p>Piel radiante y maquillaje para cualquier ocasión.</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/servicios/t5.png" alt="">
+                <h4>Cepillados, planchados &amp; trenzas</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Peinados</span>
+                <p>Peinados listos para el día a día o una gran noche.</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card__inner">
+              <div class="category-card__face category-card__face--front">
+                <img src="images/servicios/t6.png" alt="">
+                <h4>Tinturados &amp; keratina</h4>
+              </div>
+              <div class="category-card__face category-card__face--back">
+                <span class="eyebrow">Color</span>
+                <p>Color y tratamientos de alisado profesional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="category-credit" data-reveal>A cargo de <a href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">Dayse Cucalon</a> &amp; <a href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">Darla Tomala</a></p>
+      </div>
+      <div class="inline-gallery" id="galeria-mujer">
+        <h4 class="inline-gallery__title">Galería — Mujer</h4>
+        <div class="mini-gallery" data-reveal-group>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb1.jpg" alt="Corte de mujer #1"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb2.jpg" alt="Corte de mujer #2"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb3.jpg" alt="Corte de mujer #3"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb4.jpg" alt="Corte bob"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb5.jpg" alt="Corte de mujer #5"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb6.jpg" alt="Corte de mujer #6"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb7.jpg" alt="Corte de mujer #7"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb8.jpg" alt="Corte de mujer #8"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb9.jpg" alt="Corte de mujer #9"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb10.jpg" alt="Corte de mujer #10"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb11.jpg" alt="Corte de mujer #11"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb12.jpg" alt="Corte de mujer #12"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb13.jpg" alt="Corte de mujer #13"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb14.jpg" alt="Corte de mujer #14"></figure>
+          <figure><img data-lightbox loading="lazy" src="images/galeria/mujer/cortes/cb15.jpg" alt="Corte de mujer #15"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <small>&copy; 2020 Barber Shop El Chino</small>
+  <!-- ============ Nosotros (fusionado: ya no es página separada) ========
+       En desktop el equipo se reproduce como un slide por persona a medida
+       que se hace scroll (sección fijada). En móvil, o sin JS, se ve como
+       4 bloques normales apilados — nada se pierde. -->
+  <section class="scene scene--auto" id="nosotros" data-pin-slides>
+    <div class="scene__media" data-parallax="10">
+      <div class="team-bg-track" data-team-bg-track>
+        <div class="team-bg"><img src="images/slider/dollar.jpg" alt="" aria-hidden="true"></div>
+        <div class="team-bg"><img src="images/slider/slider2.jpg" alt="" aria-hidden="true"></div>
+        <div class="team-bg"><img src="images/slider/slider3.jpg" alt="" aria-hidden="true"></div>
+        <div class="team-bg"><img src="images/slider/slider4.jpg" alt="" aria-hidden="true"></div>
+      </div>
+      <div class="scene__scrim scene__scrim--light"></div>
+    </div>
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Nosotros</span>
+      <div class="team-slide-track" data-slide-track>
+        <div class="team-slide is-active">
+          <h2>Kleber Tomala</h2>
+          <p class="team-slide__role">Barbero / Estilista</p>
+          <p class="team-slide__desc">Cortes clásicos, fades y diseños urbanos.</p>
+        </div>
+        <div class="team-slide">
+          <h2>Dayse Cucalon</h2>
+          <p class="team-slide__role">Estilista profesional</p>
+          <p class="team-slide__desc">Cortes, color y peinados para mujer.</p>
+        </div>
+        <div class="team-slide">
+          <h2>Darla Tomala</h2>
+          <p class="team-slide__role">Especialista en belleza</p>
+          <p class="team-slide__desc">Manicure, pedicure, facial y tinturados.</p>
+        </div>
+        <div class="team-slide">
+          <h2>Kevin Tomala</h2>
+          <p class="team-slide__role">Diseñador web</p>
+          <p class="team-slide__desc">El sitio que estás viendo ahora mismo.</p>
+        </div>
+      </div>
+      <div class="team-slide-dots" data-slide-dots aria-hidden="true">
+        <span class="is-active"></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
 
-      <nav class="nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contactanos.html">Contactanos</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-        </ul>
-      </nav>
+  <!-- ============ Contacto / CTA ============ -->
+  <section class="scene scene--auto scene--alt" id="contacto-preview">
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Reserva tu cita</span>
+      <h2 data-reveal>Te esperamos en La Libertad</h2>
+      <p class="address" data-reveal>Cdla. San Vicente, Calle 30 y Av. 32 — La Libertad, Santa Elena, Ecuador.</p>
+    </div>
+    <div class="contact-grid" data-reveal-group>
+      <a class="contact-tile" href="https://api.whatsapp.com/send?phone=593968606488&text=Hola%20Barber%20Shop%20El%20Chino%2C%20quiero%20reservar%20una%20cita" target="_blank" rel="noopener">
+        <img src="images/contactanos/ws.png" alt=""><span>WhatsApp</span>
+      </a>
+      <a class="contact-tile" href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">
+        <img src="images/contactanos/fb.png" alt=""><span>Facebook</span>
+      </a>
+      <a class="contact-tile" href="registro.html">
+        <span class="contact-tile__glyph" aria-hidden="true">+</span><span>Regístrate</span>
+      </a>
+    </div>
+  </section>
 
-    </footer>
+</main>
 
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="images/logo/B1_350.png" alt="Barber Shop El Chino">
+      <p>&copy; 2026 Barber Shop El Chino</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+    <div class="site-footer__social">
+      <a href="https://api.whatsapp.com/send?phone=593968606488&text=Hola%20Barber%20Shop%20El%20Chino" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" data-lightbox-close aria-label="Cerrar imagen">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="js/scroll.js?v=19" defer></script>
+</body>
 </html>

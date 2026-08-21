@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juegos — Barber Shop El Chino</title>
+<meta name="description" content="Participa y gana un corte gratis en Barber Shop El Chino: juegos en vivo dentro de la barbería.">
+<link rel="icon" type="image/png" href="images/favi/Icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=19">
+</head>
+<body>
+
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <img class="brand__logo"
+           sizes="(min-width: 1200px) 120px, (min-width: 640px) 18vw, 30vw"
+           srcset="images/logo/B1_800.png 800w, images/logo/B1_400.png 400w, images/logo/B1_350.png 350w"
+           src="images/logo/B1_350.png" alt="Barber Shop El Chino">
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-site-nav>
+      <ul class="site-nav__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="scene scene--auto scene--dark" id="juegos-hero">
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Juegos</span>
+      <h1 data-split-reveal>Gana un corte gratis</h1>
+      <p data-reveal>De vez en cuando armamos un juego rápido en la barbería. Reglas simples: el barbero anuncia un tiempo en vivo y quien detenga el cronómetro más cerca, se gana el corte.</p>
+    </div>
+  </section>
+
+  <section class="scene scene--auto scene--alt" id="cronometro">
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Juego 1</span>
+      <h2 data-reveal>El cronómetro</h2>
+      <p data-reveal>El barbero dice un tiempo en voz alta — por ejemplo "quien pare en 2.02 segundos gana". Presiona <strong>Iniciar</strong>, mira la pantalla y presiona <strong>Detener</strong> lo más cerca posible de ese número.</p>
+
+      <div class="stopwatch" data-reveal data-stopwatch>
+        <div class="stopwatch__display" data-stopwatch-time aria-live="polite">00:00.00</div>
+        <div class="stopwatch__caption">Minutos : Segundos . Centésimas</div>
+        <div class="stopwatch__controls">
+          <button type="button" class="btn btn--accent" data-stopwatch-start>Iniciar</button>
+          <button type="button" class="btn btn--ghost" data-stopwatch-stop>Detener</button>
+          <button type="button" class="btn btn--ghost" data-stopwatch-reset>Reiniciar</button>
+        </div>
+        <div class="stopwatch__target">
+          <label for="stopwatch-target">Tiempo objetivo (segundos, opcional)</label>
+          <input id="stopwatch-target" type="text" inputmode="decimal" placeholder="Ej: 2.02" data-stopwatch-target>
+        </div>
+        <p class="stopwatch__result" data-stopwatch-result></p>
+      </div>
+
+      <p class="form-note" data-reveal>El campo de "tiempo objetivo" es opcional — si el barbero lo escribe antes de arrancar, el sitio avisa solo si diste en el blanco (con un pequeño margen). Si no, el barbero es quien decide a ojo. El premio se coordina en el momento, en la barbería.</p>
+    </div>
+  </section>
+
+  <section class="scene scene--auto scene--dark" id="mas-juegos">
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Próximamente</span>
+      <h2 data-reveal>Más juegos en camino</h2>
+      <p data-reveal>Vamos a ir sumando más formas de ganar cortes gratis. Síguenos por WhatsApp para enterarte cuándo juega tu turno.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="images/logo/B1_350.png" alt="Barber Shop El Chino">
+      <p>&copy; 2026 Barber Shop El Chino</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+    <div class="site-footer__social">
+      <a href="https://api.whatsapp.com/send?phone=593968606488&text=Hola%20Barber%20Shop%20El%20Chino" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="js/scroll.js?v=19" defer></script>
+</body>
+</html>
