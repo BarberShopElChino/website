@@ -1,99 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-    <title>Barber Shop El Chino</title>
-    <link rel="icon" type="images/png" href="images/favi/Icon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-    <noscript>El navegador no soporta JavaScript.
-    </noscript>
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión — Barber Shop El Chino</title>
+<meta name="description" content="Inicia sesión en Barber Shop El Chino.">
+<link rel="icon" type="image/png" href="images/favi/Icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=19">
 </head>
 <body>
-	<header class="primary-header container group">
-        <a href="index.html"><img class="f_logo" sizes="(min-width: 1200px) 120px, (min-width: 640px) 18vw, 35vw" 
-        srcset="images/logo/B1_800.png 800w, images/logo/B1_400.png 400w, images/logo/B1_350.png 350w, " 
-        src="images/logo/B1_350.png" alt="Logo Chino xd"></a>
-        <h1 class="logo">
-        <a href="index.html">Barber Shop <br> El Chino</a>
-        </h1>
-        <nav class="nav primary-nav">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
 
-                <li><a href="galeria.html">Galeria</a>
-                <ul class="submenu1">
-                   <li><a href="galeria.html#GaleriaHombre">Hombre</a></li>
-                   <li><a href="galeria.html#GaleriaMujer">Mujer</a></li>
-                 </ul>
-               </li>
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <img class="brand__logo"
+           sizes="(min-width: 1200px) 120px, (min-width: 640px) 18vw, 30vw"
+           srcset="images/logo/B1_800.png 800w, images/logo/B1_400.png 400w, images/logo/B1_350.png 350w"
+           src="images/logo/B1_350.png" alt="Barber Shop El Chino">
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-site-nav>
+      <ul class="site-nav__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-                <li><a href="servicios.html">Servicios</a>
-                  <ul class="submenu1">
-                     <li><a href="servicios.html#ServicioHombre">Hombre</a></li>
-                     <li><a href="servicios.html#ServicioMujer">Mujer</a></li>
-                   </ul>
-                </li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contactanos.html">Contactanos</a></li>
-                <li><a href="registro.html">Registrarse</a>
-                  <ul class="submenu1">
-                   <li><a href="registro.html">Registrate</a></li>
-                  </ul>
-                </li>
-            </ul>
-        </nav>
-        
-    </header>
-    <header>
-        <form class="formulario">
-            <h1>Login</h1>
-             <div class="contenedor">
-                <div class="input-contenedor">
-                 <i class="fas fa-envelope icon"></i>
-                 <input type="text" placeholder="Correo Electronico">
-                 </div>
-                 
-                 <div class="input-contenedor">
-                 <i class="fas fa-key icon"></i>
-                 <input type="password" placeholder="Contraseña">
-                 
-                 </div>
-                 <input type="submit" value="Login" class="button">
-                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-                 <p>¿No tienes una cuenta? <a class="link" href="registro.html">Registrate </a></p>
-         </div>
-        </form> 
-        <br><br>
-    </header>
-    <!-- Lead -->
+<main>
 
-    <section class="row-alt">
-      <div class="lead container">
+  <section class="scene form-scene" id="login">
+    <div class="scene__media">
+      <img src="images/galeria/mujer/cortes/cb4.jpg" alt="">
+      <div class="scene__scrim scene__scrim--light"></div>
+    </div>
+    <div class="scene__content">
+      <span class="eyebrow" data-reveal>Bienvenido de vuelta</span>
+      <h1 data-reveal>Iniciar sesión</h1>
+      <p data-reveal>Entra a tu cuenta para gestionar tus reservas y beneficios.</p>
+      <form class="auth-card" data-reveal>
+        <div class="field">
+          <label for="login-email">Correo electrónico</label>
+          <input id="login-email" type="email" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="login-password">Contraseña</label>
+          <input id="login-password" type="password" name="password" placeholder="Tu contraseña" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn--accent btn--block">Entrar</button>
+        <p class="form-note">¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+      </form>
+    </div>
+  </section>
 
-        <h1>Registrarse</h1>
+</main>
 
-        <p>Recibe ofertas y descuentos por ser un cliente activo y participativo, Registrate para más.</p>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="images/logo/B1_350.png" alt="Barber Shop El Chino">
+      <p>&copy; 2026 Barber Shop El Chino</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+    <div class="site-footer__social">
+      <a href="https://api.whatsapp.com/send?phone=593968606488&text=Hola%20Barber%20Shop%20El%20Chino" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.facebook.com/klebermc6" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
 
-      </div>
-    </section>
-
-    <!-- Footer -->
-
-    <footer class="primary-footer container group">
-     <small>&copy; Barber Shop El Chino</small>
-      <nav class="nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contactanos.html">Contactanos</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-        </ul>
-    </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="js/scroll.js?v=19" defer></script>
 </body>
 </html>
